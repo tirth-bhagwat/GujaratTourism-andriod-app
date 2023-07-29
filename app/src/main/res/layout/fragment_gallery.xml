@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="fill_parent"
+                android:layout_height="130dp"
+                android:src="@drawable/abour_palces_guj"
+                app:srcCompat="@drawable/abour_palces_guj" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="   A state with an amazingly varied topography ranging from the deep green of the dense forests to stark white at the salt plains. \n\n  Its 1660 kilometers coastline is home to some of the most unique marine species and geographical locations at the state makes it an ideal matrix, a melting pot of a vast variety of culture, people, places and history due to eons of migratory influences. \n\n    Along with all the migrations came in various ritual practices, cuisines, style of dresses, fairs and festivals, celebrations all of which were amalgamated and became a part of what this amazingly diverse state has to offer to you. This was possible as a result of trade, commerce and the dexterity of the people of Gujarat to accept and take in and make a part of all who come in here for succour, conquest or trade."
+                android:textColor="@color/normal_text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:text="Destinations"
+                android:textAlignment="center"
+                android:textColor="@color/purple_200"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
+            <!-- all card views -->
+            <!-- sou:    @drawable/sou182me
+                pava:    @drawable/pavagadhtemple
+                sun:    @drawable/modhera_sun_temple_home_page_thumbnail
+                gir:    @drawable/sasan_gir_banner
+                vav:    @drawable/rani_ki_vav29 -->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView_sou"
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp"
+                        android:layout_gravity="top"
+                        android:padding="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/sou182me"
+                        app:srcCompat="@drawable/sou182me"
+                        tools:srcCompat="@drawable/sou182me" />
+
+                    <TextView
+                        android:id="@+id/textView_sou_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:padding="10dp"
+                        android:text="Statue of Unity"
+                        android:textColor="@color/purple_200"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView_sou_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="   The statue has been built as an ode to the Iron Man of India, Sardar Vallabhbhai Patel, the first home minister of independent India. He was responsible for uniting all 562 princely states of the country to build the Republic of India. \n\n   October 31st, 2018, marked the inauguration of the world’s tallest statue – the Statue of Unity, against the backdrop of the dramatic Satpura and Vindhyachal hills in Kevadia, Gujarat. The 182-metre (600 feet aprox.) statue is dedicated to Sardar Vallabhbhai Patel, the architect of independent India. The colossal monument towers over River Narmada, a tribute to India ‘from the people of Gujarat’ to the leader who placed people’s welfare first."
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/normal_text"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView_pava"
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp"
+                        android:layout_gravity="top"
+                        android:padding="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/pavagadhtemple"
+                        app:srcCompat="@drawable/pavagadhtemple"
+                        tools:srcCompat="@drawable/pavagadhtemple" />
+
+                    <TextView
+                        android:id="@+id/textView_pava_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:padding="10dp"
+                        android:text="Pavagadh Temple"
+                        android:textColor="@color/purple_200"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView_pava_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="   At the summit of Pavagadh hill, 800 m above sea level, is the temple to Mother Kali, which is the oldest in the area, dating from the 10th-11th centuries. Hindu pilgrims were coming to visit this temple from long before the development of Champaner as a major city, and they continued for hundreds of years after its decline, right up to the present day. \n\n   To reach the temple at the summit is about a 5 km walk along a jungle footpath to the top of the hill; otherwise, there is a cable car that will haul you to the summit from about the midway point, which is the last place accessible by road. The temple is open from very early to quite late, to accommodate pilgrims arriving at all hours. The Machi Haveli is a rest house available for pilgrims."
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/normal_text"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView_sun"
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp"
+                        android:layout_gravity="top"
+                        android:padding="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/modhera_sun_temple_home_page_thumbnail"
+                        app:srcCompat="@drawable/modhera_sun_temple_home_page_thumbnail"
+                        tools:srcCompat="@drawable/modhera_sun_temple_home_page_thumbnail" />
+
+                    <TextView
+                        android:id="@+id/textView_sun_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:padding="10dp"
+                        android:text="Modhera Sun Temple"
+                        android:textColor="@color/purple_200"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView_sun_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="   As one traverses the length and breadth of Gujarat, one constantly stumbles across architectural legacies of the 'Solanki' rule. You keep coming across living spaces and monuments of another time, offering an eclectic glimpse of the artistic and ingenious beauty that makes this exotically state vibrant. \n\n   A soothing drive amidst green farmlands almost 25 km away from Mehsana on the way to the temples of goddess Bahucharaji reposes the village of Modhera. Set along the backdrop of River Pushpavati, surrounded by a terra-formed garden of flowering trees and songs of birds, rests the famed Sun temple of Modhera. \n\n   Adding the beauty in this already famous popular Modhera Sun Temple. In October, 2022 Honorable Prime Minister Shri Narendrabhai Modi Inaugurated Solar powered 3-D Projection Mapping Show and Heritage Lighting at the Temple. Which is one of a kind experience. It has added another feather in the cap of this already well known temple."
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/normal_text"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView_gir"
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp"
+                        android:layout_gravity="top"
+                        android:padding="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/sasan_gir_banner"
+                        app:srcCompat="@drawable/sasan_gir_banner"
+                        tools:srcCompat="@drawable/sasan_gir_banner" />
+
+                    <TextView
+                        android:id="@+id/textView_gir_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:padding="10dp"
+                        android:text="Gir National Park"
+                        android:textColor="@color/purple_200"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView_gir_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="   This forested, hilly, 1412-sq-km sanctuary about halfway between Veraval and Junagadh is the last refuge of the Asiatic lion (Panthera leopersica). Taking a safari through the thick, undisturbed forests is a joy – even without the added excitement of spotting lions, other wildlife and myriad bird species. Access to the sanctuary is by safari permit only, bookable in advance online."
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/normal_text"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView_vav"
+                        android:layout_width="fill_parent"
+                        android:layout_height="200dp"
+                        android:layout_gravity="top"
+                        android:padding="10dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/rani_ki_vav29"
+                        app:srcCompat="@drawable/rani_ki_vav29"
+                        tools:srcCompat="@drawable/rani_ki_vav29" />
+
+                    <TextView
+                        android:id="@+id/textView_vav_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:padding="10dp"
+                        android:text="Rani ki Vav"
+                        android:textColor="@color/purple_200"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView_vav_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="   The only real sign of Patan’s former glory is this astoundingly beautiful step-well. Located on the banks of the Saraswati River, this is one of the oldest and finest stepwells in Gujarat and is remarkably preserved. Steps lead down through multiple levels with lines of carved pillars and more than 800 sculptures, mostly on Vishnu-avatar themes, as well as striking geometric patterns. \n\n   The stepwell is made in the form of an inverted temple. It showcases superior craftsmanship of the era, and the unique Maru-Gurjara architectural style and houses sculptures similar to the Vimalavasahi temple in Mount Abu and Sun temple at Modhera."
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/normal_text"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
